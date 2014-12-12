@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dona un popeye´s</title>
+<link href='/stylesheets/tictactoe_dreipst.css' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+<link href="/stylesheets/perfect-scrollbar.css" rel="stylesheet">
+<script src="/javascripts/perfect-scrollbar.js"></script>
+
+<script src="/javascripts/tictactoe_dreipst_resize.js"></script>
+
+</head>
+
+<body style="margin-left:0px; margin-top:0px; margin-right:0px;">
+
+<div id="score_box">
+	
+	<div id="score_num">
+		<span id="score_usr">
+        3<span style="font-size:28pt;">-2</span>
+        </span>
+	</div>
+
+	<div id="turn">
+		<span id="text_score">Turno de 
+        <span style="font-weight:400;">Paulo</span>
+        </span>
+	</div>
+
+</div>
+
+<div style="float:left">
+    <div id="user_1_back"></div>
+    <div id="user_1_mid" style="background-image:url(/images/avatar_usr1.jpg);"></div>    
+    <div id="user_1_name">Paulo</div>
+    <div id="user_1_shape">
+    	<img src="/images/x_shape.png" id="x_shape">
+    </div> 
+</div>    
+
+<div id="user_2" style="float:right">
+    <div id="user_2_back"></div>
+    <div id="user_2_mid" style="background-image:url(/images/avatar_usr2.jpg);"></div>    
+    <div id="user_2_name">DeepWeb</div>
+    <div id="user_2_shape">
+    	<img src="/images/o_shape.png" id="o_shape">
+    </div>
+    
+</div>    
+    
+    <div id="head_space"></div>
+    
+    <div id="game_all">
+    
+    	<table id="game_table" border="0" cellpadding="0">
+          <tr>
+            <td class="casilla">&nbsp;</td>
+            <td class="casilla">&nbsp;</td>
+            <td class="casilla">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="casilla">&nbsp;</td>
+            <td class="casilla">&nbsp;</td>
+            <td class="casilla">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="casilla">&nbsp;</td>
+            <td class="casilla">&nbsp;</td>
+            <td class="casilla">&nbsp;</td>
+          </tr>
+        </table>
+
+    </div>
+    
+    <div id="footer">
+    
+    	<div style="height:20px;"></div>
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="10">
+          <tr>
+            <td width="19.6%" align="right">
+            	<span id="chat_title">
+                	Chat
+                </span>
+            </td>
+            
+            <td width="29%" align="right">
+            	<div id="chat_container" width="80%">
+                	
+                    <div id="div_1_chat">
+                        <p class="chat">&nbsp;</p>
+                        <p class="chat"><span class="chat_usr1">Yo: </span>Hola</p>
+                        <p class="chat">&nbsp;</p>
+                        <p class="chat"><span class="chat_usr1">Yo: </span>Ya gane</p>
+                        <p class="chat"><span class="chat_usr1">Yo: </span>Eres un noob...</p>
+                        <p class="chat">&nbsp;</p>
+                    </div>
+                    
+                    
+                    <div id="div_2_chat">
+                        <p class="chat"><span class="chat_usr2">DeepWeb: </span>Hola</p>
+                        <p class="chat">&nbsp;</p>
+                        <p class="chat"><span class="chat_usr2">DeepWeb: </span>Como estas?</p>
+                        <p class="chat">&nbsp;</p>
+                        <p class="chat">&nbsp;</p>
+                        <p class="chat"><span class="chat_usr2">DeepWeb: </span>haha veremos...</p>
+                    </div>
+                </div>
+
+                <span class="chat">Mensaje: </span>
+                <input type="text" id="input_chat" border="0">
+                    
+                <div style="height:5px;"></div>
+
+            </td>
+            
+            <td width="20%" align="right" valign="middle">
+            	<a href="http://www.popeyes.com.pe/" target="_blank">
+       	    		<img src="/images/donate_img.png" width="278" height="91" alt=""/>
+                </a>
+            </td>
+            
+            <td width="27%" align="right" valign="middle">
+           	  
+              <span id="comparte">
+              	Comparte
+              </span>
+              
+              <div style="height:5px;"></div>
+              
+                	<table width="50%" border="0" cellspacing="5" cellpadding="0">
+                      <tr>
+                        <td align="right">
+                        	<img src="/images/youtube_share.png" onmouseover="this.src='/images/youtube_share_hover.png';" onmouseout="this.src='/images/youtube_share.png';" class="social_icons">
+                        </td>
+                        <td align="right">
+                        	<img src="/images/fb_share.png" onmouseover="this.src='/images/fb_share_hover.png';" onmouseout="this.src='/images/fb_share.png';" class="social_icons">
+                        </td>
+                        <td align="right">
+                        	<img src="/images/gp_share.png" onmouseover="this.src='/images/gp_share_hover.png';" onmouseout="this.src='/images/gp_share.png';" class="social_icons">
+                        </td>
+                        <td align="right">
+                        	<img src="/images/twitter_share.png" onmouseover="this.src='/images/twitter_share_hover.png';" onmouseout="this.src='/images/twitter_share.png';" class="social_icons">
+                        </td>
+                        <td align="right">
+                        	<img src="/images/ghub_share.png" width="40" height="40" onmouseover="this.src='/images/ghub_share_hover.png';" onmouseout="this.src='/images/ghub_share.png';" class="social_icons">
+                        </td>
+                      </tr>
+                    </table>
+              
+            </td>
+            
+            <td width="4.4%" align="right">
+            	&nbsp;	
+            </td>
+          </tr>
+        </table>
+        
+    </div>
+    
+</body>
+</html>
